@@ -36,10 +36,11 @@ h6 {
     font-size: 18px;
 }
 
-p, p.small, p.lead, blockquote, figcaption, ol, ul, li {
+p, p.small, p.lead, blockquote, figcaption, ol, ul, li, a {
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     word-spacing: 0.5px;
+    text-decoration: none;
 }
 
 p {
@@ -391,6 +392,42 @@ ol, li {
 }
 
 
+/* unvisited link */
+a:link#def  {
+    color: #7C7F7B;
+  }
+
+a:link#prim {
+    color: #FC8C04;
+}
+
+  /* visited link 
+  a:visited {
+    color: green;
+  }
+  */
+  
+  /* mouse over link */
+a:hover#def {
+    color: #BCBCBC;
+  }
+
+a:hover#prim {
+    color: #FC741C;
+}
+
+a:hover#sec {
+    color: #8CC43C;
+}
+
+a:hover#gr {
+    color: #BCBCBC;
+}
+  /* selected link 
+  #def a:active {
+    color: blue;
+  }*/
+
 /* Forms */
 
 form {
@@ -435,6 +472,11 @@ textarea, select {
     background-color: #E4E4DC;
 }
 
+/* revoir pour invalid */
+::placeholder {
+    color: #048C04;
+}
+
 .valid-feedback {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -448,6 +490,7 @@ textarea, select {
     color: #DE3F25;
     font-weight: bold;
 }
+
 
 /* Agencement */
 
@@ -496,6 +539,8 @@ textarea, select {
 .home_title {
     margin : 20px;
     line-height: 150%;
+    padding: 5px;
+    border: 3px;
 }
 
 .description {
@@ -503,7 +548,7 @@ textarea, select {
 }
 
 .home_title {
-    text-align: center;
+    text-align:start;
 }
 
 .flex-item-lg {
@@ -531,6 +576,7 @@ textarea, select {
 .flex-item:hover,
 .flex-item-lg:hover {
     box-shadow: 0 0 11px #7C7F7B; 
+    color: #7C7F7B;
 }
 
 hr {
