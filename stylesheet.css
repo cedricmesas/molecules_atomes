@@ -472,6 +472,38 @@ textarea, select {
     background-color: #E4E4DC;
 }
 
+
+
+/* Small Input */
+
+input[type=text_sm], select {
+    width: 350px;
+    height: 30px;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #BCBCBC;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+}
+
+
+/* Big input */
+input[type=text_lg], select {
+    width: 350px;
+    height: 45px;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #BCBCBC;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
 /* revoir pour invalid */
 ::placeholder {
     color: #048C04;
@@ -542,7 +574,8 @@ textarea, select {
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-    background-color: #eee;
+    background-color: #8CC43C;
+    opacity: 0.5;
   }
   
   /* When the checkbox is checked, add a blue background */
@@ -658,8 +691,7 @@ textarea, select {
 
 .flex-item:hover,
 .flex-item-lg:hover {
-    box-shadow: 0 0 11px #7C7F7B; 
-    color: #7C7F7B;
+    box-shadow: 0 0 11px #7C7F7B;
 }
 
 hr {
